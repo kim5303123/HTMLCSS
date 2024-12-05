@@ -17,13 +17,46 @@
             <legend>회원 정보</legend>
 
             <label for="username">사용자 이름</label>
-            <input type="text" id="username" name="username" 
-            placeholder="사용자 이름을 입력하세요" required />
+            <input type="text" id="username" name="username" placeholder="사용자 이름을 입력하세요" required /><br />
             
             <label for="email">이메일</label>
-            <input type="text" id="email" name="email" 
-            placeholder="이메일을 입력하세요" required />
-                
+            <input type="text" id="email" name="email" placeholder="이메일을 입력하세요" required /><br />
+            
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" required /><br />
+            <label>비밀번호 확인 </label>
+            <input type="password" name="confirm_password" required /><br />
+            
+            
+            <label>성별</label>
+            <input type="radio" id="female" name="sex" value="f" checked />
+            <label for="female">여성</label>
+            <input type="radio" id="male" name="sex" value="m" />
+            <label for="male">남성</label><br />
+
+            <label>선호음료</label>
+            <input type="checkbox" id="americano" name="favorite" value="a" />
+            <label for="americano">아메리카노</label>
+            <input type="checkbox" id="latte" name="favorite" value="l" />
+            <label for="latte">라떼</label>
+            <input type="checkbox" id="tea" name="favorite" value="t" />
+            <label for="tea">티</label>
+            <input type="checkbox" id="ade" name="favorite" value="ade" />
+            <label for="ade">에이드</label><br />
+
+
+            <label for="city">거주지</label>
+            <select name="city" id="city">
+                <option value="seoul" selected>서울</option>
+                <option value="daegu" >대구</option>
+                <option value="daejun" >대전</option>
+                <option value="busan" >부산</option>
+                <option value="etc" >기타지역</option>
+            </select><br />
+
+            <label for="command">자기소개</label><br />
+            <textarea name="command" id="command" rows="5" cols="40" placeholder="내용을 입력하세요" ></textarea><br />
+
             <input type="submit" value="가입하기" />
             <input type="reset" value="다시 작성하기" />
         </fieldset>
