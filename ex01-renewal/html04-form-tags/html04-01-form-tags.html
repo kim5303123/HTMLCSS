@@ -8,8 +8,26 @@
 <body>
 
     <h1>회원 가입 폼</h1>
-
     <!-- 가상의 멤버십 서비스를 가정하고 가입 폼을 만들어 봅시다 -->
+
+    <!-- method: 데이터 전송 방식 ( GET or POST, default : GET ) -->
+    <!-- action: 데이터를 전송받아 처리할 서버으 ㅣ페이지 (default: 현재 페이지 ) --> 
+    <form name="registerForm" action="#" method="post">
+        <fieldset>
+            <legend>회원 정보</legend>
+
+            <label for="username">사용자 이름</label>
+            <input type="text" id="username" name="username" 
+            placeholder="사용자 이름을 입력하세요" required />
+            
+            <label for="email">이메일</label>
+            <input type="text" id="email" name="email" 
+            placeholder="이메일을 입력하세요" required />
+                
+            <input type="submit" value="가입하기" />
+            <input type="reset" value="다시 작성하기" />
+        </fieldset>
+    </form>
 
 </body>
 
