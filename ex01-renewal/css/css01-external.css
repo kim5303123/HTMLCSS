@@ -2,6 +2,6 @@
 
 /* External CSS */
 h1 {
-    color: yellow;
+    color: yellow !important;
     background-color: black;
 }
