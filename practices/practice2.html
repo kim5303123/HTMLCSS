@@ -3,7 +3,33 @@
 <head>
 <meta charset="utf-8">
 <title>리스트 정의하기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style type="text/css">
+	/* 1. 기본 마진과 패딩을 없앱니다.
+2. body 에 다음 속성을 적용해서 하위 엘리멘트 모두가 그 속성을 상속 받도록 해보세요.
+기본 글꼴 : “맑은 고딕”, “돋움” 
+기본 글꼴 사이즈 : 0.75em( 12px ) 
+텍스트 색상 : #333.
+3. 리스트 li의 간격을 조정하기 위해 line-height 값을 1.8em ( 28.8px) 줍니다 */
+
+/* 1. 모든 서브 <ul> 태그(엘리먼트)에 left margin값 20px을 주어 자연스럽게 depth가 생기도록 합니다.
+	2. <ul> 에 list-style-none을 주어 기본 불릿이 생기는 것을 막습니다. */
+
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: 'Consolas', 'Malgun Gothic', monospace;
+		font-size: 0.75em;
+		color: #333;
+		line-height: 1.8em;
+	}
+
+	.root > ul {
+		margin-left: 20px;
+		list-style-type: style none;;
+	}
 
 </style>
 </head>
